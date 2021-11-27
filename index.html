@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>スリープしなくなるよ</title>
-    <style>
       body {
         margin: 0;
         padding: 0;
         text-align: center;
-        overflow: hidden;
         color: #555;
         font-size: 10px;
+        width: 100%;
+        height: 90vh;
       }
       .video {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        position: absolute;
-        bottom: -50px;
+        width: 1px;
+        height: 1px;
       }
       .outer {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
       }
       .ttl {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +34,6 @@
         PCがスリープしなくなるよ(多分)
       </div>
     </div>
-    <video class="video" src="video.mp4" controls autoplay loop></video>
+    <video class="video" src="video.mp4" controls loop muted autoplay></video>
   </body>
 </html>
